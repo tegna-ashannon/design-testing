@@ -58,12 +58,12 @@ body {
 
 .full-width .module__category {
     margin: 0 1.5rem;
+    transform: translateY(-50%);
 }
 
 .full-width .module__headline {
     margin: 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 1.5rem;
 }
 
 .two-column .module {
@@ -87,13 +87,6 @@ body {
     display: block;
 }
 
-.module__category {
-	z-index: 10;
-	position: absolute;
-    color: whitesmoke;
-    padding: 0.75rem 1.5rem;
-}
-
 .module__headline {
     background-color: #000000;
     color: whitesmoke;
@@ -107,6 +100,13 @@ body {
     max-height: 4rem;
     line-height: 2rem;
     overflow: hidden;
+}
+
+.module__category {
+    z-index: 10;
+    position: absolute;
+    color: whitesmoke;
+    padding: 0.75rem 1.5rem;
 }
 
 .module__category.national{
@@ -128,17 +128,17 @@ body {
 .article-list ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 1.5rem
+    padding-left: 0;
 }
 
-.module__article-list .article-list{
-
+.article-list {
+    padding: 2rem 0;
 }
 
 .article-list__title {
     font-size: 2.5rem;
     font-weight: 500;
-    padding: 0 1.5rem;
+    padding: 0;
 }
 
 .article-list__headline {
@@ -191,9 +191,17 @@ body {
     overflow: hidden;
 }
 
-.article__gallery img {
+.article img {
     display: block;
     width: 100%;
+}
+
+.gallery__caption {
+    color: grey;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    border-bottom: 0.1rem solid grey;
+    background-color: #000;
 }
 /* placeholder to be replaced with actual gallery */
 
