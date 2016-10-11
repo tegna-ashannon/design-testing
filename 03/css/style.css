@@ -50,6 +50,16 @@ body {
     justify-content: space-between;
 }
 
+.content__module.redline.full-width {
+    border-left: 0.5rem solid red;
+}
+
+.content__module.redline:not(.full-width) {
+    border-left: 0.5rem solid red;
+    padding: 1.5rem;
+    margin: 0;
+}
+
 .module__category,
 .module__headline,
 .module__image {
@@ -65,7 +75,7 @@ body {
 }
 
 .two-column .module {
-    width: 20rem;
+    width: 48%;
 }
 
 .two-column .module__category,
